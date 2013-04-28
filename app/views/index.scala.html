@@ -1,7 +1,23 @@
 @(message: String)
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@main("home")()() {
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+			</div>
+			<div class="span8">
+			    <div class="hero-unit">
+			    	<h1>Hello there!</h1>
+			    	<p>Welcome to my website! You're probobly here for the Pok&eacute;dex</p>
+			    	<p>
+			    		<a class="btn btn-primary btn-large" href="@routes.Pokedex.index()">
+			    			Show it to me!
+			    		</a>
+			    	</p>
+			    </div>
+    		</div>
+    		<div class="span2">
+			</div>
+    	</div>
+    </div>
 }

@@ -1,0 +1,83 @@
+.pokedex-container {
+	margin-top: 40px;
+}
+
+.pokeselect {
+	height: 600px;
+	background-color: #F00;
+	border-radius: 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.pokeselect-inner {
+	/* overflow: hidden; */
+	animation: pokemon-enter 2s;
+	-webkit-animation: pokemon-enter 2s;
+	min-height: 580px;
+	position: relative;
+}
+
+.pokeselect .pokemon {
+	width: 64px;
+	height: 64px;
+	border-radius: 10px;
+	background-color: #FFF;
+	display: inline-block;
+	/* animation: pokemon-enter 2s;
+	-webkit-animation: pokemon-enter 2s;*/
+	vertical-align: top;
+	position: relative;
+	transition: opacity 0.25s, transform 0.25s;
+	-webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	opacity: 0.8;
+}
+
+.pokeselect .pokemon img {
+}
+
+.pokeselect .pokemon:HOVER {
+/* 	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	background-color: #FFF;
+	animation: pokemon-hover 0.25s alternate;*/
+	transition: opacity 0.25s, transform 0.25s; 
+	-webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+	transform: scale(1.2, 1.2);
+	-webkit-transform: scale(1.2, 1.2);
+	opacity: 1.0;
+}
+
+
+@keyframes pokemon-enter {	
+	0% {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		opacity: 1;
+	}
+	100% {
+		position: relative;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes pokemon-enter {	
+	0% {
+		position: relative;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+	100% {
+		position: relative;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+}

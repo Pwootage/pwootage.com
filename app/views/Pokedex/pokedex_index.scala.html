@@ -1,0 +1,33 @@
+@(message: String)
+
+@main("Pokédex")("javascripts/pokedex.js")("stylesheets/pokedex.css") {
+	<div class="container-fluid pokedex-container">
+		<div class="row-fluid">
+			<div class="span3" id="left-col">
+			</div>
+			<div class="span6" id="middle-col">
+				<div class="pokeselect container-fluid" id="pokeselect">
+					<div class="pokeselect-inner">
+						<div class="pokemon" num="0">
+							<img src="@routes.Assets.at("images/sprites/bw/0.png")" />
+						</div>
+						<div class="pokemon" num="1">
+							<img src="@routes.Assets.at("images/sprites/bw/1.png")" />
+						</div>
+						<div class="pokemon" num="2">
+							<img src="@routes.Assets.at("images/sprites/bw/2.png")" />
+						</div>
+						<div class="pokemon" num="3">
+							<img src="@routes.Assets.at("images/sprites/bw/3.png")" />
+						</div>
+						<div class="pokemon" num="4">
+							<img src="@routes.Assets.at("images/sprites/bw/4.png")" />
+						</div>
+					</div>
+				</div
+			</div>
+			<div class="span3" id="right-col">
+			</div
+		</div>
+	</div>
+}
