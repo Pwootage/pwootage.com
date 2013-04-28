@@ -1,4 +1,16 @@
-This is your new Play 2.1 application
-=====================================
+The pwootage.com website
+========================
 
-This file will be packaged with your application, when using `play dist`.
+Special thanks to veekeun ( http://veekun.com/ ) for creating/releasing
+his awesome database of everything you could possibly want to know about
+Pokémon, the Pokédex here wouldn't be possible without it
+
+Original Pokédex repository:
+https://github.com/veekun/pokedex
+
+My modified Pokédex repository with Play Framework binding generation code:
+https://github.com/Pwootage/pokedex
+
+Pokémon, as well as many of the resources included in this project, are 
+intellectual property of Nintendo and GAME FREAK, and are believed to
+fall under fair use.
