@@ -1,0 +1,62 @@
+@(id: Long)
+@import helper._
+
+@main("routing")("javascripts/route.js")() {
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span8">
+				<table class="game-list-entry">
+					<tr>
+						<td>
+							<div class="game-list-desc">
+								<div class="game-list-title">
+									<a class="game-list-title-link" href="#">The Legend of Zelda: Wind Waker</a>
+								</div>
+								<div class="game-list-category">
+									Any% English No Tuner
+									<div class="game-list-author">
+										'Main Route' by <a href="#">Pwootage</a>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td class="game-list-entry-right">
+							<img class="game-list-picture" src="@routes.Assets.at("images/windwaker.png")" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="span4">
+				<div class="well runstats">
+					<table class="stat-table">
+						<tr>
+							<td class="desc">PB</td>
+							<td>4:34:25</td>
+							<td class="right"><a href="#">Pwootage</a></td>
+						</tr>
+						<tr>
+							<td class="desc">CB</td>
+							<td>4:25:11</td>
+						</tr>
+						<tr>
+							<td class="desc">SD</td>
+							<td>1:38</td>
+						</tr>
+						<tr>
+							<td class="desc">AR</td>
+							<td>1:20:16</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8">
+				<div class="well route-container">
+				</div>
+			</div>
+			<div class="span4">
+			</div>
+		</div>
+	</div>
+}

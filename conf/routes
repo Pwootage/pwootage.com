@@ -5,6 +5,9 @@
 # Home page
 GET     /                           controllers.Application.index()
 
+GET		/route						controllers.Routing.index()
+GET		/route/:id					controllers.Routing.showRoute(id: Long)
+
 GET		/pokedex					controllers.Pokedex.index()
 
 # Map static resources from the /public folder to the /assets URL path

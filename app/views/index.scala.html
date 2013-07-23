@@ -1,4 +1,5 @@
-@(message: String)
+@()
+@import helper._
 
 @main("home")()() {
 	<div class="container-fluid">
@@ -8,15 +9,42 @@
 			<div class="span8">
 			    <div class="hero-unit">
 			    	<h1>Hello there!</h1>
-			    	<p>Welcome to my website! You're probobly here for the Pok&eacute;dex</p>
-			    	<p>
-			    		<a class="btn btn-primary btn-large" href="@routes.Pokedex.index()">
-			    			Show it to me!
-			    		</a>
-			    	</p>
+			    	<p>I'm Pwootage! I'm a programmer who loves playing video games and speedrunning, and a little bit of math.
+			    	This is my humble website, where I stick things I wrote and use from time to time.
+			    	It might not be the prettiest website on the web, but it's effective, at least.  
+			    	Hopefully you'll enjoy some of it ;)</p>
 			    </div>
     		</div>
     		<div class="span2">
+			</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span2">
+    		</div>
+    		<div class="span8">
+    		</div>
+    		<div class="span2">
+    		</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span3">
+				
+			</div>
+			<div class="span3">
+				<p class="news">
+					<h3>Speedrun routing tool thingy</h3>
+					I made a tool for some speedrun routing - helps people optimize routes for most games, letting you keep track of item counts
+					and the order of which you get the game. Ever skipped a 20-rupee to realize you needed it 45 minutes later? This can help!
+				</p>
+				<p class="newsbtn">
+					<a class="btn" href="@routes.Routing.index()">Route Me!</a>
+				</p>
+			</div>
+			<div class="span3">
+				
+			</div>
+			<div class="span3">
+				
 			</div>
     	</div>
     </div>

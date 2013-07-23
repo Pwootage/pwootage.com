@@ -1,5 +1,7 @@
 @(title: String)(scripts: String*)(styles: String*)(content: Html)
 
+@import helper._
+
 <!DOCTYPE html>
 
 <html>
@@ -19,6 +21,15 @@
         }
     </head>
     <body>
+    	<div class="navbar navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <a class="brand" style="margin-left: 0px" href="#">pwootage.com</a>
+		    <ul class="nav">
+		      <li><a href="@routes.Application.index()">Home</a></li>
+		      <li><a href="@routes.Routing.index()">Routing</a></li>
+		    </ul>
+		  </div>
+		</div>
 		@content
     </body>
 </html>
