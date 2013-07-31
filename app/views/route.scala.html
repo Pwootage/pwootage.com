@@ -3,59 +3,60 @@
 
 @main("routing")("javascripts/route.js")() {
 	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="span8">
-				<table class="game-list-entry">
-					<tr>
-						<td>
-							<div class="game-list-desc">
-								<div class="game-list-title">
-									<a class="game-list-title-link" href="#">The Legend of Zelda: Wind Waker</a>
-								</div>
-								<div class="game-list-category">
-									Any% English No Tuner
-									<div class="game-list-author">
-										'Main Route' by <a href="#">Pwootage</a>
-									</div>
-								</div>
-							</div>
-						</td>
-						<td class="game-list-entry-right">
-							<img class="game-list-picture" src="@routes.Assets.at("images/windwaker.png")" />
-						</td>
-					</tr>
-				</table>
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="row game-title">
+					<div class="col-8 col-sm-8 col-lg-8">
+						<h2><a class="game-list-title-link" href="#">The Legend of Zelda: Wind Waker</a></h2>
+						<h3>Any% English No Tuner</h3>
+						<small>'Main Route' by <a href="#">Pwootage</a></small>
+					</div>
+					<div class="col-4 col-sm-4 col-lg-4 game-list-picture-wrapper">
+						<img class="game-list-picture" src="@routes.Assets.at("images/windwaker.png")" />
+					</div>
+				</div>
 			</div>
-			<div class="span4">
-				<div class="well runstats">
-					<table class="stat-table">
+			<div class="col-sm-4">
+				<div class="runstats">
+					<table class="table table-condensed">
 						<tr>
-							<td class="desc">PB</td>
-							<td>4:34:25</td>
-							<td class="right"><a href="#">Pwootage</a></td>
+							<td colspan="2" class="user"><a href="#">Pwootage</a></td>
 						</tr>
 						<tr>
-							<td class="desc">CB</td>
+							<td class="desc">Personal Best</td>
+							<td>4:34:25</td>
+						</tr>
+						<tr>
+							<td class="desc">Combined Best</td>
 							<td>4:25:11</td>
 						</tr>
 						<tr>
-							<td class="desc">SD</td>
+							<td class="desc">Std. Deviation</td>
 							<td>1:38</td>
 						</tr>
 						<tr>
-							<td class="desc">AR</td>
+							<td class="desc">Average reset</td>
 							<td>1:20:16</td>
 						</tr>
 					</table>
 				</div>
 			</div>
 		</div>
-		<div class="row-fluid">
-			<div class="span8">
-				<div class="well route-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="route-container">
+					<ul class="media-list">
+					  <li class="media">
+					    <a class="pull-left" href="#">
+					      <img class="media-object" src="@routes.Assets.at("images/windwaker.png")" style="width: 64px; height: 64px;">
+					    </a>
+					    <div class="media-body">
+					      <h4 class="media-heading">Media heading</h4>
+					      Stuff
+					    </div>
+					  </li>
+					</ul>
 				</div>
-			</div>
-			<div class="span4">
 			</div>
 		</div>
 	</div>
